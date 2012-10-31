@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Списиок статей">
+		<message>
+			Отображает список статей
+		</message>
+	</layout>
+	<state>
+		<name>Списиок статей</name>
+		<description>Отображает список статей</description>
+		<params> 
+			<param type="text" label="Кол-во" description="Количество статей на странице" default="4" name="limit" />
+			<param type="radio" name="data" label="Показывать вложенные материалы:" description="Показывать вложенные материалы" >
+				<option value="com_content:articles:category:2">Да</option>
+				<option value="0">Нет</option>
+			</param>
+		</params>
+	</state>
+</metadata>

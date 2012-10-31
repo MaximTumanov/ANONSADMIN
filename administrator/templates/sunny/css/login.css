@@ -1,0 +1,70 @@
+
+@import url("general.css");
+
+/* -- Specific styles ----------------------------- */
+
+form  			{ margin: 0px; padding: 0px; }
+form .inputbox  { width: 120px; margin-left: 10px; }
+form br 	    { display: none; }
+.login          { margin: 0 auto; width: 500px }
+
+
+p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.button { text-align: right; }
+
+.login-form    { text-align: left; width: 60%; }
+.login-form h1 { display: none; }
+.login-form p  { padding: 0 1em 0 1em; }
+
+.login-text { text-align: left; width: 40%; float: left; }
+
+#form-login label {
+	display: block;
+	float: left;
+	width: 80px;
+	text-align: right;
+	padding: 4px;
+	color: #666;
+	font-weight: bold;
+}
+
+#form-login .button_holder {
+	padding-left: 100px;
+}
+
+#form-login div.button1{
+ 	float: left;
+}
+
+#form-login div.button1 div.next {
+	float: left;
+}
+#login-error-message{text-align:center; color:#900; padding-top:20px}
+
+#logo_admin{background:url(../images/logo-admin.jpg) no-repeat}
+
+#border-top{background-color:#42434A }
+
+#border-top .title {
+	font-size: 22px; 
+	color: #fff; 
+	line-height: 110px;
+	padding-left: 150px;
+}
+
+#border-top .right {
+	display: block; float: right;
+	color: #fff;
+	padding:20px 50px 0 0;
+	font-size:14px
+}
+
+#border-top .right a{color:#FFF; text-decoration:underline}
+#border-top .right a:hover{text-decoration:none; color:#52c9e2}
+
+#border-top .right p{margin:0; padding:10px 0 0}

@@ -1,0 +1,2 @@
+<jdoc:include type="component" />
+

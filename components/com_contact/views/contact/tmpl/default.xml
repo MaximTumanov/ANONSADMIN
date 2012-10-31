@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Контакты">
+		<message>
+			Отображает контакты
+		</message>
+	</layout>
+	<state>
+		<name>Контакты</name>
+		<description>Отображает контакты</description>
+	</state>
+</metadata>

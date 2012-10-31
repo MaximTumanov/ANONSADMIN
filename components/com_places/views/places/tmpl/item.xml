@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Места">
+		<message>
+			Отображает выбранное место
+		</message>
+	</layout>
+	<state>
+		<name>Места</name>
+		<description>Отображает выбранное место</description>
+	</state>
+</metadata>

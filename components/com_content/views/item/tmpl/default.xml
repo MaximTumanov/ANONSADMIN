@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Статичная страница">
+		<message>
+			Отображает статичную страницу
+		</message>
+	</layout>
+	<state>
+		<name>Статичная страница</name>
+		<description>Отображает статичную страницу</description>
+		<params> 
+			<param type="radio" name="data" label="Показывать вложенные материалы:" description="Показывать вложенные материалы" >
+				<option value="com_content:item:item:4:7">Да</option>
+				<option value="0">Нет</option>
+			</param>
+		</params>
+		<url addpath="/administrator/components/com_content/elements">
+			<param name="id" type="article" default="0" label="Выбирите материал" description="Выбирите материал для отображения" />
+		</url>
+	</state>
+</metadata>

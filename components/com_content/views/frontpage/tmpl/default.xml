@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Frontpage Blog Layout">
+		<message>
+			<![CDATA[CATEGORY BLOG LAYOUT DESC]]>
+		</message>
+	</layout>
+	<state>
+		<name>Frontpage Blog Layout</name>
+		<description>FRONTPAGE BLOG LAYOUT DESC</description>
+	</state>
+</metadata>

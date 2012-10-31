@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="__404__">
+		<message>
+			Отображает __404__
+		</message>
+	</layout>
+	<state>
+		<name>__404__</name>
+		<description>Отображает __404__</description>
+	</state>
+</metadata>

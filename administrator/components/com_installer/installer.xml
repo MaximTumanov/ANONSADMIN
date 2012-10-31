@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.0.0">
+	<name>Installation Manager</name>
+	<author>SunNY</author>
+	<creationDate>2010</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>strug@sunny.net.ua</authorEmail>
+	<authorUrl>www.sunny.net.ua</authorUrl>
+	<version>1.5.0</version>
+	<description>Installation Manager</description>
+</install>

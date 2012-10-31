@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Рекомендуем посетить</name>
+	<author>Strug</author>
+	<creationDate>15.12.2010</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>strug@sunny.net.ua</authorEmail>
+	<authorUrl>www.sunny.net.ua</authorUrl>
+	<version>1.0.1</version>
+	<description>Этот модуль отображает рекомендуемые события на главной</description>
+	<files>
+		<filename module="mod_recomended">mod_recomended.php</filename>
+	</files>
+	<params>
+		<param type="text" name="count" label="Кол-во" description="Количество, отображаемых рекомендуемых событий на главной" />
+	</params>
+</install>

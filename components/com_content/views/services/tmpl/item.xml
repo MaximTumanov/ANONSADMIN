@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Шаблон услуги">
+		<message>
+			Отображает выбранную услугу компании
+		</message>
+	</layout>
+	<state>
+		<name>Шаблон услуги</name>
+		<description>Отображает выбранную услугу компании</description>
+	</state>
+</metadata>
+ 

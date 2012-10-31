@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Контактные данные</name>
+	<author>Strug</author>
+	<creationDate>15.12.2010</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>strug@sunny.net.ua</authorEmail>
+	<authorUrl>www.sunny.net.ua</authorUrl>
+	<version>1.0.1</version>
+	<description>Этот модуль отображает контактные данные в футере</description>
+	<files>
+		<filename module="mod_contact">mod_contact.php</filename>
+	</files>
+	<params>
+		<param type="text" name="email" label="Email" description="Email" />
+		<param type="text" name="cod" label="Код" description="Код города" />
+		<param type="text" name="tel" label="Телефон" description="Телефон" />
+	</params>
+</install>

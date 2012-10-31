@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Событие">
+		<message>
+			Отображает выбранное событие
+		</message>
+	</layout>
+	<state>
+		<name>Событие</name>
+		<description>Отображает выбранное событие</description>
+		<url addpath="/administrator/components/com_events/elements">
+			<param name="id" type="article" default="0" label="Выбирите материал" description="Выбирите материал для отображения" />
+		</url>
+	</state>
+</metadata>

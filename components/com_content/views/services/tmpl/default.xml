@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Список партнеров">
+		<message>
+			Отображает список партнеров
+		</message>
+	</layout>
+	<state>
+		<name>Список партнеров</name>
+		<description>Отображает список партнеров</description>
+		<params>
+			<param type="radio" name="data" label="Показывать вложенные категории:" description="Показывать вложенные категории" >
+				<option value="com_content:services:item:3:6">Да</option>
+				<option value="0">Нет</option>
+			</param>			
+		</params>
+	</state>
+</metadata>
+ 

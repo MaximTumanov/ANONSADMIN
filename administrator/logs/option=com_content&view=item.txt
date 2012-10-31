@@ -1,0 +1,17 @@
+Date: 2011-02-25 09:11:14
+
+
+---APP---
+Memory Usage: 4147800
+Application afterLoad: 0.003 seconds, 0.59 MB
+Application afterInitialise: 0.126 seconds, 2.89 MB
+Application afterRoute: 0.130 seconds, 3.17 MB
+Application afterDispatch: 0.205 seconds, 3.83 MB
+Application afterRender: 0.208 seconds, 3.91 MB
+---------
+
+---SQL---
+Total Query: 7
+Total Duration: 0.00235 sec.
+Total Query from Cache: 0
+---------

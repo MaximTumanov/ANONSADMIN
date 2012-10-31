@@ -1,0 +1,18 @@
+
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^media\/js\/thumb.php$ includes\/thumb.php [L]
+RewriteCond %{QUERY_STRING} w=[0-9]+ [OR]
+RewriteCond %{QUERY_STRING} h=[0-9]+ [OR]
+RewriteCond %{QUERY_STRING} ^tc?$
+RewriteRule ^(.*)\.(jpg|gif|png) media\/js\/thumb.php?name=%{REQUEST_FILENAME}&%{QUERY_STRING} [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteCond %{REQUEST_URI} (/|\.php|\.html|\.htm|\.feed|\.pdf|\.raw|/[^.]*)$  [NC]
+RewriteRule (.*) index.php
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
+

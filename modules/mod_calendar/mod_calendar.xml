@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Календарь</name>
+	<author>Strug</author>
+	<creationDate>15.12.2010</creationDate>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>strug@sunny.net.ua</authorEmail>
+	<authorUrl>www.sunny.net.ua</authorUrl>
+	<version>1.0.1</version>
+	<description>Этот модуль отображает колендарь событий</description>
+	<files>
+		<filename module="mod_calendar">mod_calendar.php</filename>
+	</files>
+</install>

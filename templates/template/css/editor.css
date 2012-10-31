@@ -1,0 +1,56 @@
+* {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h1, h2, h3 {
+    color: #C22C46;
+    font-family: "Times New Roman";
+    font-weight: normal;
+}
+
+p{
+	margin-bottom:25px;
+}
+
+h2, h3{
+	margin-bottom:15px;
+}
+
+h2{
+	font-size:20px;
+}
+
+h3{
+	font-size:15px;
+}
+
+ul {
+    list-style: none outside none;
+	margin:25px 0 25px 25px;
+}
+
+ul li{
+	background:url("../images/marker_li.png") no-repeat scroll 0 6px transparent;
+	padding-left:21px;
+}
+
+p.back_grey{
+    background: none repeat scroll 0 0 #EBEEF2;
+    margin-left: 25px;
+    padding: 25px 20px;
+}
+
+a{
+    color: #C22C46;
+    text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Списиок новостей">
+		<message>
+			Отображает список новостей
+		</message>
+	</layout>
+	<state>
+		<name>Списиок новостей</name>
+		<description>Отображает список новостей</description>
+		<params>
+			<param type="text" label="Кол-во" description="Количество новостей на странице" default="4" name="limit" />
+		</params>
+	</state>
+</metadata>

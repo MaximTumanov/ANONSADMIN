@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Шаблон новости">
+		<message>
+			Отображает выбранную новость
+		</message>
+	</layout>
+	<state>
+		<name>Шаблон новости</name>
+		<description>Отображает выбранную новость</description>
+		<url addpath="/administrator/components/com_content/elements">
+			<param name="id" type="article" default="0" label="Выбирите материал" description="Выбирите материал для отображения" />
+		</url>
+	</state>
+</metadata>

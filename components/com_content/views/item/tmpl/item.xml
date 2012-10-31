@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Материал">
+		<message>
+			Отображает выбранный материал
+		</message>
+	</layout>
+	<state>
+		<name>Материал</name>
+		<description>Отображает выбранный материал</description>
+		<url addpath="/administrator/components/com_content/elements">
+			<param name="id" type="article" default="0" label="Выбирите материал" description="Выбирите материал для отображения" />
+		</url>
+	</state>
+</metadata>
