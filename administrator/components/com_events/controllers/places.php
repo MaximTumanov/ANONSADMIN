@@ -76,8 +76,8 @@ class EventsControllerPlaces extends EventsController {
 		$dop_title = mysql_real_escape_string(JRequest::getVar('dop_title'));
 		$alias = JString::translit(JRequest::getVar('alias'));
 		
-		if(empty($alias)):
-			$alias = (isset($dop_title)) ? JString::translit($dop_title) : JString::translit($title);
+		if(empty($alias) || $alias == ''):
+			$alias = (isset($dop_title) && $dop_title != '') ? JString::translit($dop_title) : JString::translit($title);
 		endif;
 		
 		$alias     = mysql_real_escape_string($alias);
