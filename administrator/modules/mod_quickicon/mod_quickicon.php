@@ -81,6 +81,9 @@ if (!defined( '_JOS_QUICKICON_MODULE' ))
 
 		$link = 'index.php?option=com_blog';
 		quickiconButton( $link, 'icon-48-component.png', JText::_( 'Блог' ) );
+
+		$link = 'index.php?option=com_ourusers&view=user';
+		quickiconButton( $link, 'icon-48-component.png', JText::_( 'Юзеры' ) );
 		
 		?>
 		
