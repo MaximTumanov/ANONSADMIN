@@ -39,12 +39,12 @@ JHTML::_('behavior.calendar');
 
 <tr>
 	<td class="key"><label for="phone"><?php echo JText::_('Тел.');?></label></td>
-	<td><input type="text" value="<?php echo $phone?>" readonly disabled maxlength="255" size="60"  name="phone" id="phone" class="inputbox"> </td>
+	<td><input type="text" value="<?php echo $phone?>" maxlength="255" size="60"  name="phone" id="phone" class="inputbox"> </td>
 </tr>
 
 <tr>
 	<td class="key"><label for="email"><?php echo JText::_('Email');?></label></td>
-	<td><input type="text" value="<?php echo $email?>" readonly disabled maxlength="255" size="60"  name="email" id="email" class="inputbox"> </td>
+	<td><input type="text" value="<?php echo $email?>" maxlength="255" size="60"  name="email" id="email" class="inputbox"> </td>
 </tr>
 
 <tr>

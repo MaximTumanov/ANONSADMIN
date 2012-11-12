@@ -71,7 +71,7 @@ class OurusersModelUser extends JModel {
 	*/
 	function _publish($cids){
 		$db = &JFactory::getDBO();
-		$q = "UPDATE `{$this->tUsers}` SET `public` = '1' where `{$this->id}` IN({$cids})";
+		$q = "UPDATE `{$this->tUsers}` SET `public` = '1', `new` = '0' where `{$this->id}` IN({$cids})";
 		$db->setQuery($q);
 		$db->query();			
 	}
@@ -82,21 +82,21 @@ class OurusersModelUser extends JModel {
 	*/
 	function _unpublish($cids){
 		$db = &JFactory::getDBO();
-		$q = "UPDATE `{$this->tUsers}` SET `public` = '2' where `{$this->id}` IN({$cids})";
+		$q = "UPDATE `{$this->tUsers}` SET `public` = '2', `new` = '0' where `{$this->id}` IN({$cids})";
 		$db->setQuery($q);
 		$db->query();		
 	}
 	
 	function _vip($cids){
 		$db = &JFactory::getDBO();
-		$q = "UPDATE `{$this->tUsers}` SET `vip` = '1' where `{$this->id}` IN({$cids})";
+		$q = "UPDATE `{$this->tUsers}` SET `vip` = '1', `new` = '0' where `{$this->id}` IN({$cids})";
 		$db->setQuery($q);
 		$db->query();			
 	}
 
 	function _unvip($cids){
 		$db = &JFactory::getDBO();
-		$q = "UPDATE `{$this->tUsers}` SET `vip` = '0' where `{$this->id}` IN({$cids})";
+		$q = "UPDATE `{$this->tUsers}` SET `vip` = '0', `new` = '0' where `{$this->id}` IN({$cids})";
 		$db->setQuery($q);
 		$db->query();		
 	}	
@@ -117,16 +117,17 @@ class OurusersModelUser extends JModel {
 	 * @param int    $id_comment  ID комментария
 	 * @param string $text текст  комментария
 	 */
-	function _update($id, $public, $vip, $new, $id_place){
+	function _update($id, $public, $vip, $new, $id_place, $email, $phone){
 		$db = &JFactory::getDBO();
 		$q = "UPDATE `{$this->tUsers}` SET 
 			`public` = '{$public}',
 			`vip` = '{$vip}',
 			`new` = '{$new}',
-			`id_place` => '{$id_place}'
+			`id_place` = '{$id_place}',
+			`email` = '{$email}',
+			`phone` = '{$phone}'
 		WHERE `{$this->id}` = '{$id}'";
 		$db->setQuery($q);
-		
 		$db->query();		
 	}	
 }

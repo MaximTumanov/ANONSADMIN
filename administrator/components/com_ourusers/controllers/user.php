@@ -101,12 +101,15 @@ class OurusersControllerUser extends OurusersController {
 		$public = JRequest::getInt('public');
 		$vip = JRequest::getInt('vip');
 	
-		$new = ($public == 1 ) ? 0 : 1;
-		$public = (JRequest::getInt('denied', 0)) ? 2 : $public;
+		$new = ($public == 1) ? 0 : 1;
+		$public = (JRequest::getInt('denied', 0) == 1) ? 2 : $public;
 
 		$id_place = JRequest::getInt('id_place', 0);
 
-		$this->model->_update($id, $public, $vip, $new, $id_place);		
+		$email = JRequest::getVar('email');
+		$phone = JRequest::getVar('phone');
+
+		$this->model->_update($id, $public, $vip, $new, $id_place, $email, $phone);		
 		$this->setRedirect("index.php?option={$this->component}&view={$this->view}", JText::_('Изменения сохранены'));	
 	}	
 }
