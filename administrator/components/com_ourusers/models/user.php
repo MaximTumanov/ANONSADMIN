@@ -117,12 +117,13 @@ class OurusersModelUser extends JModel {
 	 * @param int    $id_comment  ID комментария
 	 * @param string $text текст  комментария
 	 */
-	function _update($id, $public, $vip, $new){
+	function _update($id, $public, $vip, $new, $id_place){
 		$db = &JFactory::getDBO();
 		$q = "UPDATE `{$this->tUsers}` SET 
 			`public` = '{$public}',
 			`vip` = '{$vip}',
-			`new` = '{$new}'
+			`new` = '{$new}',
+			`id_place` => '{$id_place}'
 		WHERE `{$this->id}` = '{$id}'";
 		$db->setQuery($q);
 		

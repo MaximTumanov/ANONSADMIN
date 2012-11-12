@@ -61,7 +61,7 @@
             <td><?php echo $item->network?></td>
             <td><?php echo $item->phone?></td>
             <td><a href="mailto:<?php echo $item->email?>"><?php echo $item->email?></a></td>
-            <td><?php echo $place->title?></td>
+            <td><?php echo ($place->title ? $place->title : 'Редактировать')?></td>
             <td align="center"><?php echo $link_vip; ?></td>
 						<td align="center"><?php echo $link_pub; ?></td>
             <td align="center"><?php echo $link_denied?></td>

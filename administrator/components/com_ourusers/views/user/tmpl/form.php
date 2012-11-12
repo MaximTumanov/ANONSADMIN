@@ -18,7 +18,7 @@ if($id){
 	$id_place = $item->id_place;
 }
 
-$placeList  = OurusersHelper::selectList($model->getPlaceList(), 'id_place', 'Выбирите организатора', $id_place, 'disabled style="width: 265px"');
+$placeList  = OurusersHelper::selectList($model->getPlaceList(), 'id_place', 'Выбирите организатора', $id_place, 'style="width: 265px"');
 
 $vipList    = OurusersHelper::selectYN($vip, 'vip');
 $pubList    = OurusersHelper::selectYN($public, 'public');
