@@ -56,12 +56,12 @@
 					<tr class="row<?php echo ($i%2) ? 0 : 1;?>">
 						<td><?php echo $id; ?></td>
 						<td><input type="checkbox" name="cid[]" id="cb<?php echo $id; ?>" onclick="isChecked(this.checked);" value="<?php echo $id;; ?>" /></td>
-            <td><a href="<?php echo $link_edit;?>"><?php echo $item->fio;?></a></td>
+            <td><a href="<?php echo $link_edit;?>"><?php echo ($item->fio ? $item->fio : 'Редактировать');?></a></td>
             <td><?php echo $item->login?></td>
             <td><?php echo $item->network?></td>
             <td><?php echo $item->phone?></td>
             <td><a href="mailto:<?php echo $item->email?>"><?php echo $item->email?></a></td>
-            <td><?php echo ($place->title ? $place->title : 'Редактировать')?></td>
+            <td><?php echo $place->title?></td>
             <td align="center"><?php echo $link_vip; ?></td>
 						<td align="center"><?php echo $link_pub; ?></td>
             <td align="center"><?php echo $link_denied?></td>
