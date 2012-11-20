@@ -19,6 +19,7 @@ class EventsControllerEvent extends EventsController {
 		$this->registerTask('unvip', 'unvip');
 		$this->registerTask('removeselect', 'removeSelect');
 		$this->registerTask('save', 'save');
+		$this->registerTask('check', 'check');
 		$this->model = $this->getModel('Event');
 	}
 	function edit(){
@@ -26,6 +27,12 @@ class EventsControllerEvent extends EventsController {
 		JRequest::setVar('layout', 'form');
 		parent::display();
 	}
+
+	function check(){
+		$title = mysql_real_escape_string(JRequest::getVar('title'));
+		echo json_encode($this->model->checkName($title));
+	}
+
 	/**
 	* publish
 	* опубликовывает выбранные записи

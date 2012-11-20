@@ -10,6 +10,14 @@ class EventsModelEvent extends JModel {
 	* @var string $id поле в таблице с PRIMARY KEY
 	*/	
 	var $id    = 'id_event';
+
+	function checkName($title){
+		$db = &JFactory::getDBO();
+		$q = "SELECT count(*) FROM `{$this->tEvents}` WHERE `title` LIKE '%{$title}%' ";
+		$db->setQuery($q);
+		return ($db->loadResult() > 0) ? true : false; 
+	}
+
 	/**
 	* возвращает кол-во записей с учетом фильтров
 	* @return int

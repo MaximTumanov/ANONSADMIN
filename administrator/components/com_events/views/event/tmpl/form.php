@@ -119,6 +119,11 @@ $dir      = '../images'.DS.'sunny'.DS.'events'.DS.'events';
 $dir_echo = 'images'.DS.'sunny'.DS.'events'.DS.'events';
 JHTML::_('behavior.calendar');
 ?>
+<style type="text/css">
+	#check_status{margin-left: 10px}
+	.no{color: red;}
+	.ok{color: green;}
+</style>
 <form action="index.php" method="post" name="adminForm" enctype="multipart/form-data">
 
 <?php
@@ -135,7 +140,7 @@ JHTML::_('behavior.calendar');
      <table class="admintable">
 		<tr>
 			<td class="key"><label for="title"><?php echo JText::_('Название');?></label></td>
-			<td><input type="text" value='<?php echo $title?>' size="60"  name="title" id="title" class="inputbox"></td>
+			<td><input type="text" value='<?php echo $title?>' size="60"  name="title" id="title" class="inputbox">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" id="check_title">проверить!</a> <span id="check_status"></span></td>
 			<td rowspan="7" align="left" valign="top">
 				<div style="margin-bottom: 10px;">Категория
 				<?php echo JHTML::_('tooltip',  'Можно выбрать несколько категорий, зажав Ctrl!'); ?>
@@ -304,6 +309,25 @@ JHTML::_('behavior.calendar');
 </form>
   <script type="text/javascript">
   		jQuery(function (){
+
+  			jQuery('#check_title').click(function(event){
+  				event.preventDefault();
+  				var title = jQuery('#title').val()
+  					,	div = jQuery('#check_status');
+  				jQuery.ajax({
+  					url: "ajax.php?option=com_events&task=check&controller=event",
+  					type: "POST",
+  					dataType: "json",
+  					data: {title: title},
+  					success: function(data){
+  						if (data) {
+  							div.removeClass('ok').addClass('no').text('Уже существует');
+  						} else {
+  							div.removeClass('no').addClass('ok').text('Не найден');
+  						}
+  					}
+  				})
+  			});
 
   			var default_price = jQuery('#price').val();
 
