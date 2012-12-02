@@ -65,8 +65,8 @@
             <td><a href="mailto:<?php echo $item->email?>"><?php echo $item->email?></a></td>
             <td><?php echo $place->title?></td>
             <td align="center"><?php echo $link_request?></td>
+						<td align="center"><?php echo $link_pub; ?></td>            
             <td align="center"><?php echo $link_vip; ?></td>
-						<td align="center"><?php echo $link_pub; ?></td>
             <td align="center"><?php echo $link_denied?></td>
 					</tr>
 			<?php endforeach;?>

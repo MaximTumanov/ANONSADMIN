@@ -54,7 +54,8 @@ class OurusersHelper
 	
 	function getMenuName($view){
 		$menu = array();
-		$menu['user'] = JText::_('пользователи');
+		$menu['user'] = JText::_('обзор');
+		$menu['events'] = JText::_('события');
 		$string = JString::strtolower($menu[$view]);
 		return $string;
 	}
