@@ -236,7 +236,7 @@ class EventsModelParser extends JModel {
 	}
 	function _save($title, $alias, $img, $s_desc, $desc, $address, $type, $vip, $wtf, $published, $category, $id_place, $dates, $k_title, $k_desc, $k_keyw, $price) {
 		$db = &JFactory::getDBO();
-		$q = "INSERT INTO `{$this->tEvents}` VALUES('', '{$title}', '{$alias}', '{$img}', '{$s_desc}', '{$desc}', '{$address}', '{$type}', '{$vip}', '{$wtf}', '{$published}', '{$k_title}', '{$k_desc}', '{$k_keyw}', '{$price}', '')";
+		$q = "INSERT INTO `{$this->tEvents}` VALUES('', '{$title}', '{$alias}', '{$img}', '{$s_desc}', '{$desc}', '{$address}', '{$type}', '{$vip}', '{$wtf}', '{$published}', '{$k_title}', '{$k_desc}', '{$k_keyw}', '{$price}', '', '')";
 		$db->setQuery($q);
 		$db->query();
 
